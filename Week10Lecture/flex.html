@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--Dominic Cucar, 04/02/2026-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flex Box</title>
+        <style>
+            #gallery {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+
+            img { 
+                margin: 1em;
+                box-shadow: 10px 10px 10px #777; 
+            }
+        </style>
+        </head>
+        <body>
+            <div id="gallery">
+                <img src="bird1.jpg" width="200" height="150" alt="Red Crested Cardinal">
+                <img id="nameOfId" src="bird2.jpg" width="200" height="150" alt="Rose-Breasted Grosbeak">
+                <img src="bird3.jpg" width="200" height="150" alt="Gyrfalcon">
+                <img src="bird4.jpg" width="200" height="150" alt="Rock Wren">
+                <img src="bird5.jpg" width="200" height="150" alt="Coopers Hawk">
+                <img src="bird6.jpg" width="200" height="150" alt="Immature Bald Eagle">
+            </div>
+        </body>
+</html>
