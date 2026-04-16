@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--Dominic Cucar, 04/16/2026-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tables</title>
+        <style>
+            table, th, td { border-style: none; }
+            caption { font-family: Verdana, sans-serif;
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      padding-bottom: 5px;
+            }
+            thead { background-color: #0099cc; color: white; }
+            tbody { font-family: Arial, sans-serif; font-size: 0.9em; }
+            tbody td { border-bottom: 1px dashed #006666;
+                       padding-left: 25px;
+            }
+            tfoot { background-color: #0099cc; color: white;
+                    font-weight: bold; text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--Class Schedule Table-->
+        <table border="1">
+            <caption>Spring 2022 Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th id="className">Class</th>
+                    <th id="meetingTime" colspan="2">Meeting Time</th>
+                    <th id="credits">Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="className">Web 110</td>
+                    <td headers="meetingTime">Wednesday</td>
+                    <td headers="meetingTime">1:00-3:50pm</td>
+                    <td headers="credits">3</td>
+                </tr>
+                <tr>
+                    <td headers="className">Web 110</td>
+                    <td headers="meetingTime">Wednesday</td>
+                    <td headers="meetingTime">1:00-3:50pm</td>
+                    <td headers="credits">3</td>
+                </tr>
+                <tr>
+                    <td headers="className">Web 110</td>
+                    <td headers="meetingTime">Wednesday</td>
+                    <td headers="meetingTime">1:00-3:50pm</td>
+                    <td headers="credits">3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td headers="className" colspan="3">Total</td>
+                    <td headers="credits">9</td>
+                </tr>
+            </tfoot>
+            
+            
+        </table>
+       
+    </body>
+
+</html>
