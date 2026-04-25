@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!---Dominic Cucar, 04/13/2026, Final3, Contact-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Santa Fe Hills, Kansas City, MO | Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Santa Fe Hills, Kansas City, MO</h1>
+                <h2>Contact</h2>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="final1.html">Home</a></li>
+                    <li><a href="final2.html">History</a></li>
+                    <li><a href="final3.html">Contact</a></li>
+                    <li><a href="final4.html">Credits</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h3>Chime Tower</h3>
+                <div class="collection">
+                    <img src="images/chimetower.png" alt="Chime Tower">
+                </div>
+                <p><small>Figure 2. "Chime Tower", from "Indian Village Country Club: Homes, Not Houses" (p. 24) by Emory J. Sweeney, 1923, "Missouri Valley Special Collections, Kansas City Public Library, Kansas City, Missouri."</small></p>
+                <hr>
+                <h3>Contact Us</h3>
+                <p>Required fields are marked with an asterisk *</p>
+                <p>This is a demo form and will not submit at this time.</p>
+                
+                <form class="form-container" name="contactForm" id="contactForm" method="post" action="#">
+
+                    <label for="firstName">* First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                        
+                    <label for="lastName">* Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">* Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="birthDate">Date of Birth</label>
+                    <input type="date" name="birthDate" id="birthDate">
+           
+                    <label for="contact">Do you have a favorite BBQ restaurant?</label>
+                    <select name="contact" id="contact">
+                        <option value="" selected>Select one</option>
+                        <option value="bryant">Arthur Bryant's</option>
+                        <option value="gates">Gates</option>
+                        <option value="jackstack">Jack Stack</option>
+                        <option value="q39">Q39</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="comments">* Comments:</label>
+                    <textarea name="comments" id="comments" cols="30" rows="5" required></textarea>
+
+                    <div class="check-box">
+                        <label><input type="checkbox" name="live" id="live" value="yes">Do you live in KC?</label>
+                    </div>
+
+                    <label>Which type of fan are you?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="fan" id="fanRoyals" value="royals">Royals</label>
+                        <label><input type="radio" name="fan" id="fanChiefs" value="chiefs">Chiefs</label>
+                    </div>
+
+                    <div class="button-group">
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                        <input type="reset" name="reset" id="reset" value="Clear">
+                    </div>
+
+                </form>
+                <hr>
+                <div class="contact">
+                    <p><strong>Contact: </strong><a href="mailto:dominicscucar@gmail.com">dominicscucar@gmail.com</a></p>
+                    <a href="#wrapper">Back to top of page</a><br><br>
+                </div>
+                <hr>
+            </main>
+            <footer>
+                <small>&copy; 2026 Dominic S. Cucar</small><br>
+                <small>Background photo by <a href="https://www.pexels.com/@pavel-danilyuk/">Pavel Danilyuk</a> on <a href=" https://www.pexels.com/photo/aerial-view-of-houses-in-a-residential-area-7937294/">Pexels</a></small>
+            </footer>
+        </div>
+    </body>
+</html>
