@@ -1,0 +1,192 @@
+/* 
+    Dominic Cucar, 04/13/2026
+    WEB-110, Instructor: Alexa Summers, Spring 2026
+    Final Exam Project
+    Responsive Website Design
+*/
+
+/* Mobile styles go first */
+
+body {
+     background: url('images/neighborhood.jpg') no-repeat center fixed;
+     background-size: cover;
+}
+
+/* responsive images */
+
+.collection img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main container */
+
+#wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    padding: 1em;
+    background-color: lightgrey;
+    color: black;
+    overflow-wrap: break-word; /* Prevent credits URLs from spilling out of the wrapper container */
+    min-width: 22.5em; /* 360px Mobile needs to stop decreasing at this point. */
+}
+
+header {
+    text-align: center;
+}
+
+/* Menu bar */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Make menu items vertical on mobile devices */
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em; /* 16px */
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+/* End of menu styling */
+
+h1, h2, h3, p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Form styles */
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 31.25em; /* 500px */
+    background-color: white;
+    padding: 1.25em; /* 20px */
+    border-radius: 5px;
+}
+
+label {
+    text-align: right;
+    padding-right: 5px;
+    font-size: 1em; /* 16px */
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em; /* 16px */
+    margin-bottom: 10px;
+}
+
+.check-box {
+    grid-column: 2;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex; 
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    grid-column: 2;
+    display: flex;
+    gap: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 50%;
+}
+
+/* End of form styles */
+
+/* Portrait images */
+
+.founders {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(12.5em, 1fr) ); /* 200px */
+    gap: 5px;
+    padding: 5px;
+}
+
+.founder {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.founder img {
+   aspect-ratio: 1;
+   object-fit: contain;
+   width: 75%; /* Decrease size of photos on mobile and tablet */
+}
+
+/* End of Portrait images */
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Tablet styles go second */
+
+@media (min-width: 50em) { /* 800px */
+
+    nav ul {
+        flex-direction: row; /* Make menu items horizontal once screen is larger */
+    }
+
+    nav ul li a {
+        padding: 1em 1em;
+    }
+}
+
+/* Desktop styles go last */
+
+@media (min-width: 64em) { /* 1024px */
+
+     .founder img {
+        width: 100%; /* Increase size of portrait images once screen is desktop size */
+    }
+
+    .collection img {
+        width: 50%; /* Decrease size of collection images once screen is desktop size */
+    }
+}
